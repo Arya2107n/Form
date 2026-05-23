@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Form</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+      );
+    }
+
+    .form{
+      width:350px;
+      padding:35px;
+      border-radius:20px;
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,0.1);
+      border:1px solid rgba(255,255,255,0.2);
+      box-shadow:
+      0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .form h1{
+      text-align:center;
+      margin-bottom:25px;
+      color:white;
+      font-size:2rem;
+      letter-spacing:1px;
+    }
+
+    .form input{
+      width:100%;
+      padding:14px;
+      margin:12px 0;
+      border:none;
+      outline:none;
+      border-radius:12px;
+      background:rgba(255,255,255,0.15);
+      color:white;
+      font-size:1rem;
+      transition:0.3s;
+    }
+
+    .form input::placeholder{
+      color:#d1d5db;
+    }
+
+    .form input:focus{
+      background:rgba(255,255,255,0.25);
+      transform:scale(1.02);
+      border:1px solid #38bdf8;
+      box-shadow:0 0 10px #38bdf8;
+    }
+
+    .btn{
+      width:100%;
+      padding:14px;
+      margin-top:15px;
+      border:none;
+      border-radius:12px;
+      background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #3b82f6
+      );
+      color:white;
+      font-size:1rem;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:
+      0 10px 20px rgba(59,130,246,0.5);
+    }
+
+    .btn:active{
+      transform:scale(0.97);
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <form class="form">
+
+    <h1>Register</h1>
+
+    <input
+      type="text"
+      name="uname"
+      class="uname"
+      placeholder="Enter Username"
+    />
+
+    <input
+      type="email"
+      name="email"
+      class="email"
+      placeholder="Enter Email"
+    />
+    <input
+      type="password"
+      name="password"
+      class="password"
+      placeholder="Enter Password"
+    />
+    <input
+      type="text"
+      name="number"
+      class="number"
+      placeholder="Enter Number"
+    />  
+    <button type="submit" class="btn">
+      Submit
+    </button>
+
+  </form>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
